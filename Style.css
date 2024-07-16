@@ -1,0 +1,686 @@
+:root
+{
+    --blue: #05b0ff;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1);
+    --border: .2rem solid rgba(0, 0, 0, 1);
+    --outline: .1rem solid rgba(0,0,0.1);
+
+}
+
+
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    
+}
+
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+     background: #f2f1f1;
+    
+     
+}
+
+.header
+{
+    border: 0px solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 5%;
+    background: #fff;
+    height: 15%;
+    
+}
+
+.header .logo
+{
+  font-size: 2.5rem;
+  font-weight: bolder;  
+}
+
+
+.header .navbar a
+{
+    font-size: 1.7rem;
+    margin: 0 2rem;
+    color: var(--black);
+}
+
+.header .navbar a:hover
+{
+    color: var(--blue);
+}
+
+.header .icons a button
+{
+    border: 0px solid;
+    height: 4.5rem;
+    width: 14rem;
+    line-height: 4.5rem;
+    border-radius: 5rem;
+    background: var(--blue);
+    color:  white;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.header .icons a button:hover
+{
+   background:  #0571ff; 
+   color: white;
+}
+    
+    /*code for banner*/
+section
+{
+    padding: 3rem 5%;
+
+}
+
+
+.heading
+{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+}
+
+.heading span
+{
+    color: var(--blue);
+    padding: .5rem;
+}
+
+.description
+{
+    text-align: center;
+    padding: 0rem 22rem;
+    padding-bottom: 10rem;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.home 
+{
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    background: url(banner1.jpg) no-repeat scroll;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 5rem;
+   
+}
+
+
+.home .content
+{
+    border: 0px solid;
+    text-align: center;
+    width: 60rem;
+      
+}
+
+.home .content h1
+{
+   color: var(--black); 
+   font-size: 3rem;
+}
+
+.home .content h2
+{
+   color: blue; 
+   font-size: 3rem;
+   padding: 1.5rem 0;
+}
+
+.home .content p
+{
+   color: var(--black); 
+   font-size: 1.7rem;
+   padding: 2rem 0;
+   line-height: 1.8;
+   text-align: center;
+   font-weight: bolder;
+}
+
+.home1 .box-container
+{
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem, 1fr));
+    padding-bottom: 0rem; 
+}
+
+.home1 .box-container .box
+{
+    border: 0px solid red;
+    padding-bottom: 0rem;  
+}
+
+.home1 .box-container .box img
+{
+    border-radius: 1rem;
+    border-top-right-radius: 5rem;
+    border-color: #05b0ff;
+    border-style: dashed;
+    border-width: 3;
+}
+/*Services*/
+.Services .box-container
+{
+   border: 0px solid;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.Services .box-container .box
+{
+    border: 0px solid red;
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+
+
+.Services .box-container .box:hover
+{
+    box-shadow: 1px 1px 10px 4px var(--blue);
+    background-color: #cdefff;
+
+}
+
+
+.Services .box-container .box img
+{
+    margin: 1rem 0;
+    height: 8rem;
+}
+
+
+.Services .box-container .box h3
+{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+
+}
+
+
+.Services .box-container .box p
+{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+/*Services*/
+
+
+
+/*About*/
+.About .box-container
+{
+   border: 0px solid;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(50rem, 1fr));
+   padding-bottom: 2rem; 
+}
+
+.About .box-container .box
+{
+    border: 0px solid red;
+    background: #fff; 
+}
+
+.About .box-container .box p
+{
+    font-size: 1.7rem;
+    line-height: 1.6;
+    color: var(--light-color);
+    padding: 2rem 3rem;
+    text-align: left;
+}
+
+.About .box-container .box ul
+{
+    font-size: 2.5rem;
+    line-height: 2.3;
+    color: var(--light-color);
+    padding-top: 8rem;
+    padding-left: 10rem;
+}
+
+.About .box-container .box img
+{
+    border-radius: 4rem;
+}
+
+.About .box-container .box button
+{
+    border: 0px solid;
+    height: 5rem;
+    width: 23rem;
+    line-height: 4.5rem;
+    border-radius: 5rem;
+    background: var(--blue);
+    font-weight: 900;
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.About .box-container .box  button:hover
+{
+   background:  #0571ff; 
+   color: white;
+}
+  
+/*About*/
+
+
+/*Gallery*/
+.Gallery .box-container
+{
+   border: 0px solid;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(40rem, 1fr));
+   padding-bottom: 2rem; 
+}
+
+.Gallery .box-container .box
+{
+    border: 0px solid red;
+    padding-bottom: 5rem;  
+}
+
+.Gallery .box-container .box img
+{
+    border-radius: 3rem;
+}
+/*Gallery*/
+
+
+
+
+
+
+/*footer*/
+.footer .logo
+{
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: bolder;
+    padding: 1rem 0; 
+}
+
+.footer
+{
+    background: white;
+}
+
+.footer .box-container
+{
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+}
+
+
+.footer .box-container .box h3
+{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+
+}
+
+.footer .box-container .box .links
+{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .links i
+{
+    color: var(--blue);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box .links:hover i
+{
+    padding-right: 2rem;
+
+}
+
+
+.footer .box-container .box p
+{
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+    padding-right: 13rem;
+}
+
+.footer .box-container .box .share a
+{
+    border: 0px solid;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: var(--black);
+    margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+
+}
+
+.footer .box-container .box .share a:hover
+{
+    background: var(--blue);
+    color: white;
+}
+
+.footer .credit
+{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--black);
+    border-top: var(--border);
+
+
+}
+
+.footer .credit span
+{
+    color: var(--blue);
+}
+/*footer*/
+
+
+
+
+.btn
+{
+    border: 0px solid;
+    height: 5rem;
+    width: 23rem;
+    line-height: 4.5rem;
+    border-radius: 5rem;
+    background: var(--blue);
+    font-weight: 900;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/*Login Page Css*/
+.Login-form
+{
+    border: 0px solid;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    top: 23%;
+    left: 20%;
+    box-shadow: var(--box-shadow);
+    padding: 3rem;
+    border-radius: 1rem;
+    background: #fff;
+    text-align: center;
+}
+
+.Login-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--blue);
+
+}
+
+.Login-form .box
+{
+    border: 0px solid;
+    width: 100%;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.Login-form p{
+    font-size: 1.6rem;
+    padding: .5rem 0;
+    color: var(--light-color);
+
+}
+
+.Login-form p a
+{
+    text-decoration: underline;
+}
+
+.Login-form p a:hover
+{
+    color: var(--blue);
+    
+}
+
+
+.Login-form .div1
+{
+    padding-bottom: 2rem;
+
+}
+
+.Login-form .div2
+{
+    padding-bottom: 2rem;
+
+}
+
+.Login-form .div3
+{
+    padding-top: 3rem;
+
+}
+/*Login Page Css*/
+
+
+
+
+/*Register Page Css*/
+.Register-form
+{
+    border: 0px solid;
+    width: 40rem;
+    height: 55rem;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    box-shadow: var(--box-shadow);
+    padding: 3rem;
+    border-radius: 1rem;
+    background: #fff;
+    text-align: center;
+}
+
+.Register-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--blue);
+
+}
+
+.Register-form .box
+{
+    border: 0px solid;
+    width: 100%;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.Register-form p{
+    font-size: 1.6rem;
+    padding: .5rem 0;
+    color: var(--light-color);
+
+}
+
+.Register-form p a
+{
+    text-decoration: underline;
+}
+
+.Register-form p a:hover
+{
+    color: var(--blue);
+    
+}
+
+
+.Register-form .div1
+{
+    padding-bottom: 2rem;
+
+}
+
+.Register-form .div2
+{
+    padding-bottom: 2rem;
+
+}
+
+.Register-form .div3
+{
+    padding-top: 3rem;
+
+}
+/*Register Page Css*/
+
+
+
+
+
+
+/*Appointment Page Css*/
+.Appointment-form
+{
+    border: 0px solid;
+    width: 40rem;
+    height: 66rem;
+    position: absolute;
+    top: 8%;
+    left: 20%;
+    box-shadow: var(--box-shadow);
+    padding: 3rem;
+    border-radius: 1rem;
+    background: #fff;
+    text-align: center;
+}
+
+.Appointment-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--blue);
+
+}
+
+.Appointment-form .box
+{
+    border: 0px solid;
+    width: 100%;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+
+.Appointment-form p{
+    font-size: 1.6rem;
+    padding: .5rem 0;
+    color: var(--light-color);
+
+}
+
+.Appointment-form p a
+{
+    text-decoration: underline;
+}
+
+.Appointment-form p a:hover
+{
+    color: var(--blue);
+    
+}
+
+
+.Appointment-form .div1
+{
+    padding-bottom: 2rem;
+
+}
+
+.Appointment-form .div2
+{
+    padding-bottom: 3rem;
+
+}
+
+.Appointment-form .div3
+{
+    padding-top: 3rem;
+
+}
+
+/*Appointment Page Css*/
