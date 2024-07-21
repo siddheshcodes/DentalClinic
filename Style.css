@@ -1,16 +1,17 @@
 :root
 {
-    --blue: #05b0ff;
-    --black: #130f40;
+    --blue: #2626c4;
+    --black: #000000;
     --light-color: #666;
     --box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1);
     --border: .2rem solid rgba(0, 0, 0, 1);
     --outline: .1rem solid rgba(0,0,0.1);
-
+    
 }
 
 
 *{
+    
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -54,16 +55,20 @@ body{
 
 .header .logo
 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   font-weight: bolder;  
+  margin-top: 0.5rem;
+  color:#0707a3 ;
 }
 
 
 .header .navbar a
 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     margin: 0 2rem;
     color: var(--black);
+    font-weight: 550;
+    border-top: 1.2rem;
 }
 
 .header .navbar a:hover
@@ -77,7 +82,7 @@ body{
     height: 4.5rem;
     width: 14rem;
     line-height: 4.5rem;
-    border-radius: 5rem;
+    border-radius: 7rem;
     background: var(--blue);
     color:  white;
     font-size: 1.5rem;
@@ -186,7 +191,7 @@ section
 {
     border-radius: 1rem;
     border-top-right-radius: 5rem;
-    border-color: #05b0ff;
+    border-color: #2626c4;
     border-style: dashed;
     border-width: 3;
 }
@@ -684,3 +689,5 @@ section
 }
 
 /*Appointment Page Css*/
+
+/* Developers Page Css */
